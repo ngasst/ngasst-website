@@ -1,10 +1,9 @@
-<html DOCTYPE="html">
+<!doctype html>
+<html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GASTON NDANYUZWE's Resume</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       rel="stylesheet"
@@ -33,109 +32,81 @@
       href="https://cdn.jsdelivr.net/gh/andreasjansson/monoid-webfont@master/monoid.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="heading.css" />
-    <link rel="stylesheet" href="tech-skills.css" />
-    <link rel="stylesheet" href="work-history.css" />
-    <link rel="stylesheet" href="education.css" />
-    <style>
-      html body #cv-body {
-        font-family: "IBM Plex Mono", monospace;
-        /* font-size: 16px; */
-      }
-
-      html body #cv-body h1,
-      html body #cv-body h2,
-      html body #cv-body h3 {
-        font-family: "Fira Code", monospace;
-      }
-
-      html body #cv-body h1 {
-        color: var(--dark-gray);
-      }
-
-      html body #cv-body h2 {
-        color: var(--dark-gray);
-      }
-
-      html body #cv-body h3 {
-        color: var(--light-gray);
-      }
-    </style>
+    <link rel="stylesheet" href="../src/css/resume.css" />
   </head>
 
-  <body class="bg-gray-100 font-sans">
-    <div id="cv-body" class="max-w-4xl mx-auto p-6">
-      <div id="heading" class="bg-white p-4 rounded-lg shadow mb-6">
+  <body class="bg-gray-100">
+    <div id="cv-body" class="max-w-6xl mx-auto p-4">
+      <div id="heading" class="bg-white p-4 rounded-lg shadow mb-4">
         <div>
-          <h1 class="text-4xl font-bold">GASTON NDANYUZWE</h1>
-          <p class="text-xl text-gray-700">
+          <h1>GASTON NDANYUZWE</h1>
+          <p class="text-lg text-gray-700">
             Senior Full Stack Software Engineer
           </p>
-          <p class="spoken-languages">
-            <span><i class="text-sm fi fi-us"></i>Native level</span>
-            <span><i class="text-sm fi fi-fr"></i>Langue maternelle</span>
-            <span><i class="text-sm fi fi-nl"></i>Professionele niveau</span>
-          </p>
-          <p class="contact-info text-gray-600">
+          <div class="spoken-languages">
+            <div class="spoken-language">
+              <i class="text-sm fi fi-us"></i>Native level
+            </div>
+            <div class="spoken-language">
+              <i class="text-sm fi fi-fr"></i>Langue maternelle
+            </div>
+            <div class="spoken-language">
+              <i class="text-sm fi fi-nl"></i>Professionele niveau
+            </div>
+          </div>
+          <p class="contact-info">
             <i class="fas fa-at"></i>
             <span>gaston.ndanyuzwe@gmail.com</span>
           </p>
-          <p class="contact-info text-gray-600">
+          <p class="contact-info">
             <i class="fas fa-mobile-retro"></i>
             <span>+32 484 68 18 25</span>
           </p>
-          <p class="contact-info text-gray-600">
+          <p class="contact-info">
             <i class="fa-brands fa-linkedin"></i>
             <span>linkedin.com/in/ngasst</span>
           </p>
-          <p class="contact-info text-gray-600">
+          <p class="contact-info">
             <i class="fa-solid fa-house"></i>
             <span>Brussels Area, Belgium</span>
           </p>
         </div>
-        <img class="img image rounded rounded-lg" src="headshot.jpg" />
+
+        <div id="headshot-wrapper">
+          <img
+            src="/headshot.jpg"
+            alt="Professional headshot of Gaston Ndanyuzwe"
+          />
+        </div>
       </div>
 
-      <div class="bg-white p-4 rounded-lg shadow mb-6">
-        <h2 class="text-2xl font-semibold mb-3">Professional Summary</h2>
-        <p class="text-gray-600">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2>Professional Summary</h2>
+        <p id="professional-summary">
           Experienced Software Engineer with over 12 years in full-stack
           development, specializing in JavaScript, TypeScript, and modern web
           technologies. Proficient in developing scalable, high-performing web
           applications and leading complex projects from concept to deployment.
           Strong background in DevOps practices and cloud computing.
         </p>
-        <p class="mt-2">
-          <span class="font-bold">Fun fact!</span> This resume was built using
-          some of tools and techniques described within. Forget Zuckerberg.
-          <span class="font-bold italic">That </span> is meta. Ahem, for the
-          most up to date version of it, head to
-          <a
-            class="text-blue-700 active:text-red-600 hover:text-blue-400 visited:text-purple-600"
-            href="https://ngasst.dev/resume/"
-            >ngasst.dev/resume</a
-          >.
-        </p>
       </div>
 
       <div
         id="tech-skills"
-        class="bg-white p-4 rounded-lg shadow mb-6 page-break"
+        class="bg-white p-4 rounded-lg shadow mt-4 page-break"
       >
-        <h2 class="text-2xl font-semibold mb-3">
+        <h2>
           Technical Skills<span class="annotation">Years of experience</span>
         </h2>
 
         <!-- Grid Layout for Skill Categories -->
         <div
           id="skills-grid"
-          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-4"
+          class="grid grid-cols-1 print:grid-cols-4 lg:grid-cols-4 gap-x-2 gap-y-4"
         >
           <!-- Languages - Web -->
           <div>
-            <h3 class="font-semibold text-lg mb-2">
-              Languages&nbsp;&mdash;&nbsp;Web
-            </h3>
+            <h3>Languages&nbsp;&mdash;&nbsp;Web</h3>
             <ul>
               <!-- HTML -->
               <li>
@@ -1321,10 +1292,10 @@
         </div>
       </div>
 
-      <div id="work-history" class="bg-white p-4 rounded-lg shadow mb-6">
-        <h2 class="text-2xl font-semibold mb-3">Professional Experience</h2>
+      <div id="work-history" class="bg-white p-4 rounded-lg shadow mt-4">
+        <h2>Professional Experience</h2>
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title">Principal Software Engineer</span>
             <span class="work-history--company">
               <i class="fas fa-industry"></i>
@@ -1355,7 +1326,7 @@
         </div>
         <!-- Sr. Full Stack Web Engineer at Enervalis -->
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title"
               >Sr. Full Stack Software Engineer</span
             >
@@ -1394,7 +1365,7 @@
         </div>
         <!-- Web Development Instructor at Wild Code School -->
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title">
               Web Development Instructor
               <small>freelance</small>
@@ -1431,7 +1402,7 @@
 
         <!-- Solutions Architect Full Stack and DevOps Engineer at Pink Mango -->
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title">
               Solutions Architect, Full Stack, and DevOps Engineer
               <small>freelance</small>
@@ -1470,7 +1441,7 @@
 
         <!-- Sr. Full Stack Software Engineer at Swanest -->
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title"
               >Sr. Full Stack Software Engineer</span
             >
@@ -1511,7 +1482,7 @@
 
         <!-- Computer Technician, Network Administrator, Software Developer & Information and Security Manager at Belgian Defense, NATO, EUFOR -->
         <div class="work-history--item mb-4">
-          <h3 class="font-semibold text-lg">
+          <h3>
             <span class="work-history--title"
               >Computer Technician, Network Administrator, Software Engineer &
               Information and Security Manager</span
@@ -1547,8 +1518,8 @@
         <!-- Other experiences follow a similar pattern -->
       </div>
 
-      <div id="education" class="bg-white p-4 rounded-lg shadow mb-6">
-        <h2 class="text-2xl font-semibold mb-3">Education</h2>
+      <div id="education" class="bg-white p-4 rounded-lg shadow mt-4">
+        <h2>Education</h2>
         <ul class="education-items text-gray-600">
           <li class="education-item">
             <span>Data Science </span>
@@ -1594,8 +1565,23 @@
           <!-- ... other education entries -->
         </ul>
       </div>
+
+      <div class="bg-white p-4 rounded-lg shadow mt-4">
+        <h2>Fun fact!</h2>
+        <p class="mt-2">
+          This resume was built using some of tools and techniques described
+          within. Forget Zuckerberg.
+          <span class="font-bold italic">That </span> is meta. Ahem, for the
+          most up to date version of it, head to
+          <a
+            class="text-blue-700 active:text-red-600 hover:text-blue-400 visited:text-purple-600"
+            href="https://ngasst.dev/resume/"
+            >ngasst.dev/resume</a
+          >.
+        </p>
+      </div>
     </div>
-    <script type="text/javascript" src="calc.js" defer></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="module" src="../js/resume.ts"></script>
   </body>
 </html>

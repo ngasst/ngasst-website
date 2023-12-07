@@ -1,0 +1,109 @@
+@layer utilities {
+  .font-weight-200 {
+    font-variation-settings: "wght" 200;
+  }
+
+  .font-weight-700 {
+    font-variation-settings: "wght" 700;
+  }
+
+  .font-width-125 {
+    font-variation-settings: "wdth" 125;
+  }
+
+  .font-width-75 {
+    font-variation-settings: "wdth" 75;
+  }
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-extra-light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-extra-light-italic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-light-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-italic.woff2") format("woff2");
+  font-weight: normal; /* Typically 'italic' has the same weight as 'regular' */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-semi-bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-semi-bold-italic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-semi-light.woff2") format("woff2");
+  font-weight: 350; /* If 'semi-light' is not standard, choose the closest weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-semi-light-italic.woff2") format("woff2");
+  font-weight: 350; /* Match the weight with the semi-light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-bold.woff2") format("woff2");
+  font-weight: bold; /* Or 700, if specifying numerically */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cascadia-code-bold-italic.woff2") format("woff2");
+  font-weight: bold; /* Or 700 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "M PLUS Code Latin";
+  src: url("../fonts/mplus-code-latin-variable-font-width-wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
