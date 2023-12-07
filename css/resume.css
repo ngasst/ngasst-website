@@ -1,0 +1,43 @@
+@import "./heading.css";
+@import "./tech-skills.css";
+@import "./work-history.css";
+@import "./education.css";
+@import "./footer.css";
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body *,
+  body:not(h1, h2, h3, h4, h5, h6) {
+    font-family: "Cascadia Code", "sans-serif", "monospace";
+    @apply text-zinc-800 text-base;
+  }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "M Plus Code", "sans-serif", "monospace";
+    @apply text-stone-800;
+  }
+
+  body h1 {
+    @apply text-2xl font-bold;
+  }
+
+  body h2 {
+    @apply text-xl font-semibold mb-1;
+  }
+
+  body h3 {
+    @apply text-lg font-semibold mb-1 text-stone-700;
+  }
+
+  body #professional-summary {
+    @apply text-gray-600 lg:text-base print:text-sm;
+  }
+}

@@ -1,24 +1,16 @@
-document.onreadystatechange = function () {
-  if (document.readyState === "complete") {
-    updateWidths();
-    addNumbers();
-  }
-};
-
-function updateWidths() {
+export function updateWidths() {
   const skillsets = document.querySelectorAll("#tech-skills .years");
-  for (skillset of skillsets) {
+  for (const skillset of skillsets) {
     paintExperience(skillset);
   }
 }
 
-function paintExperience(node) {
+function paintExperience(node: Element) {
   const spans = node.querySelectorAll("span");
-  console.log();
-  const indicator = node.querySelector(".display-years");
+  const indicator = node.querySelector(".display-years") as HTMLDivElement;
   if (indicator) {
     const years = spans.length;
-    let max = getComputedStyle(document.documentElement)
+    let max: number | string = getComputedStyle(document.documentElement)
       .getPropertyValue("--max-years")
       .trim();
     max = max ? parseInt(max) : 0;
@@ -27,21 +19,23 @@ function paintExperience(node) {
   }
 }
 
-function addNumbers() {
-  const lines = document.querySelectorAll("#skills-grid li");
-  for (line of lines) {
+export function addNumbers() {
+  const lines = document.querySelectorAll(
+    "#skills-grid li",
+  ) as NodeListOf<HTMLLIElement>;
+  for (const line of lines) {
     const years = getLineYears(line);
     const left = line.querySelector(".exp-left");
     if (left) {
-      const right = document.createElement("p");
+      const right = document.createElement("p") as HTMLParagraphElement;
       right.classList.add("exp-right");
-      right.innerHTML = years;
+      right.innerHTML = `${years}`;
       line.appendChild(right);
     }
   }
 }
 
-function getLineYears(node) {
+function getLineYears(node: HTMLLIElement) {
   const spans = node.querySelectorAll(".years span.year");
   const years = spans.length ?? 0;
   return years;
