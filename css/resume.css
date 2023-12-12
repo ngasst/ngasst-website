@@ -2,8 +2,8 @@
 @import "./tech-skills.css";
 @import "./work-history.css";
 @import "./education.css";
-@import "./footer.css";
 @import "./fonts.css";
+@import "./footer.css";
 
 @tailwind base;
 @tailwind components;
@@ -21,8 +21,8 @@
   body h4,
   body h5,
   body h6 {
-    font-family: "M Plus Code", "sans-serif", "monospace";
-    @apply text-stone-800;
+    font-family: "M Plus Code Latin", "sans-serif", "monospace";
+    @apply text-stone-800 font-bold;
   }
 
   body h1 {
