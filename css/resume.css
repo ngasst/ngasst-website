@@ -1,8 +1,3 @@
-@import "./heading.css";
-@import "./tech-skills.css";
-@import "./work-history.css";
-@import "./education.css";
-@import "./footer.css";
 @import "./fonts.css";
 
 @tailwind base;
@@ -10,34 +5,340 @@
 @tailwind utilities;
 
 @layer base {
-  body *,
-  body:not(h1, h2, h3, h4, h5, h6) {
-    font-family: "Cascadia Code", "sans-serif", "monospace";
-    @apply text-zinc-800 text-base;
-  }
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6 {
-    font-family: "M Plus Code", "sans-serif", "monospace";
-    @apply text-stone-800;
+  :root {
+    --max-years: 12;
+    --blue: dodgerblue;
+    --yellow: papayawhip;
+    --light-gray: #11115595;
+    --dark-gray: #333344;
   }
 
-  body h1 {
-    @apply text-2xl font-bold;
+  html,
+  body {
+    @apply w-full;
   }
 
-  body h2 {
-    @apply text-xl font-semibold mb-1;
-  }
+  body {
+    @apply bg-gray-100;
+    display: flex;
+    justify-content: center;
 
-  body h3 {
-    @apply text-lg font-semibold mb-1 text-stone-700;
-  }
+    #cv {
+      @apply mx-auto w-full;
+      @apply max-w-[24rem] md:max-w-[42rem] lg:max-w-[56rem] print:max-w-[21cm];
+      @apply my-2 print:mx-4 print:my-2 print:px-4;
 
-  body #professional-summary {
-    @apply text-gray-600 lg:text-base print:text-sm;
+      .cv-section {
+        @apply bg-white p-2 rounded-lg shadow my-2;
+      }
+
+      /* HEADING */
+      &:not(h1, h2, h3, h4, h5, h6) {
+        font-family: "Cascadia Code", "sans-serif", "monospace";
+        @apply text-slate-800;
+        font-size: 0.9rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "M Plus Code Latin", "sans-serif", "monospace";
+        @apply text-stone-800 font-bold;
+      }
+
+      h1 {
+        @apply text-2xl font-bold;
+      }
+
+      h2 {
+        @apply text-xl font-semibold mb-1;
+        @apply print:text-lg print:font-bold print:mt-0;
+      }
+
+      h3 {
+        @apply text-lg font-semibold mb-1 text-stone-700;
+      }
+
+      h2,
+      h3 {
+        @pply text-slate-700;
+
+        > span.annotation {
+          @apply text-[0.75rem] print:text-[0.6rem] text-slate-700 pl-[0.5rem] pr-[1rem];
+        }
+      }
+
+      #heading {
+        @apply grid gap-2 grid-cols-[auto_100px];
+        @apply md:grid-cols-[auto_120px];
+        @apply lg:grid-cols-[auto_150px];
+
+        > div {
+          p.job-title {
+            @apply text-[0.7rem] md:text-lg font-semibold text-gray-700;
+          }
+
+          .spoken-languages {
+            @apply text-gray-600;
+            @apply grid md:grid-cols-[max-content_max-content_auto] print:grid-cols-[max-content_max-content_auto];
+            @apply grid-rows-3 md:grid-rows-1 print:grid-rows-1;
+            @apply md:gap-2 my-2 print:gap-3;
+            @apply mb-4;
+
+            span i {
+              margin-right: 0.25rem;
+            }
+
+            .spoken-language {
+              @apply flex justify-start items-center gap-2;
+
+              span.proficiency-txt {
+                @apply font-semibold text-sm md:text-[0.8rem] lg:text-base print:text-sm;
+              }
+            }
+          }
+
+          p.contact-info {
+            @apply grid grid-cols-[1rem_auto];
+
+            iconify-icon {
+              @apply inline-block text-stone-600;
+            }
+
+            span {
+              display: inline-block;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+
+        #headshot-wrapper {
+          @apply relative max-w-[150px] rounded-xl overflow-hidden;
+          @apply sm:max-h-[100px] md:max-h-[250px];
+
+          img {
+            @apply object-cover w-full h-full;
+          }
+
+          &::after {
+            @apply mix-blend-soft-light bg-gradient-to-r from-sky-500 to-amber-400 opacity-60;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            z-index: 2;
+          }
+
+          &::before {
+            @apply mix-blend-soft-light bg-gradient-to-l from-sky-600 to-amber-600 opacity-80;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            z-index: 1;
+          }
+        }
+      }
+
+      #professional-summary {
+        @apply text-gray-600 lg:text-base print:text-[0.8rem] print:leading-4;
+      }
+
+      /* TECH SKILLS */
+      #tech-skills {
+        #skills-grid {
+          @apply grid grid-cols-1 gap-x-2 gap-y-4;
+          /*md-up*/
+          @apply md:grid-cols-2;
+          /*lg-up*/
+          @apply lg:grid-cols-4;
+          /*print*/
+          @apply print:grid-cols-4 print:gap-y-2;
+
+          > div {
+            @apply pt-0;
+
+            h3 {
+              @apply mt-0;
+              @apply print:text-[0.95rem] print:font-bold;
+            }
+
+            ul {
+              @apply list-none p-0 m-0 max-h-[max-content];
+
+              li {
+                @apply grid gap-[0.125rem] grid-cols-[auto_1rem] items-end my-[0.25rem];
+
+                .exp-left {
+                  .written {
+                    @apply mb-1 flex items-center leading-tight;
+
+                    iconify-icon {
+                      @apply text-base mr-1;
+                    }
+                  }
+                }
+
+                i {
+                  font-size: 1.2rem;
+                }
+
+                p.exp-right {
+                  font-size: 0.8rem;
+                  line-height: 0.75rem;
+                  text-align: right;
+                  margin-right: 0.125rem;
+                  font-weight: semibold;
+                  color: var(--light-gray);
+                }
+
+                .years {
+                  @apply flex items-end justify-between w-full h-[max-content] bg-yellow-100/20 rounded-lg border border-yellow-300;
+
+                  .display-years {
+                    @apply h-[0.5rem] bg-blue-500 rounded-lg;
+                  }
+
+                  .year-count {
+                    @apply hidden;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /* WORK HISTORY */
+      #work-history {
+        @apply p-0;
+
+        h2 {
+          @apply px-2 pt-2 pb-4 bg-blue-50/60;
+        }
+
+        .work-history--item {
+          @apply p-2;
+
+          > p {
+            @apply flex items-center;
+
+            iconify-icon {
+              @apply mr-2;
+            }
+          }
+
+          &:nth-child(odd) {
+            @apply bg-amber-50/60;
+
+            h3 {
+              @apply border-blue-600/20;
+            }
+          }
+
+          &:nth-child(even) {
+            @apply bg-blue-50/60;
+
+            h3 {
+              @apply border-amber-600/20;
+            }
+          }
+
+          .work-history--header {
+            h3 {
+              @apply grid-rows-4 gap-1 items-center;
+              @apply grid md:grid-rows-1 md:grid-cols-[auto_14rem_12rem] md:gap-2 items-center border-b mb-2 pb-1;
+              @apply md:truncate md:overflow-hidden;
+
+              span {
+                @apply flex items-center;
+
+                iconify-icon {
+                  @apply mr-2;
+                }
+              }
+
+              span.work-history--title {
+                @apply mr-2 text-base;
+              }
+
+              span.work-history--company {
+                @apply text-sm;
+              }
+
+              span.work-history--dates {
+                @apply text-sm;
+              }
+            }
+
+            .work-history--tags {
+              @apply flex;
+
+              p {
+                @apply text-xs font-bold py-0.5 px-2 mr-2 rounded-xl mb-2;
+              }
+
+              p.wh-tag--part-time {
+                @apply text-stone-800 bg-sky-300;
+              }
+
+              p.wh-tag--multi-role {
+                @apply text-gray-800 bg-purple-300;
+              }
+
+              p.wh-tag--freelance {
+                @apply text-slate-800 bg-orange-300;
+              }
+            }
+          }
+
+          ul.work-history--responsibilities {
+            @apply mt-2 list-none pl-4;
+
+            /* Remove default padding */
+            li {
+              @apply flex;
+
+              &::before {
+                @apply pr-2;
+                content: "- ";
+              }
+            }
+          }
+        }
+      }
+
+      #education {
+        @apply break-before-page;
+
+        ul.education-items {
+          @apply list-none pl-4 w-full;
+
+          li.education-item {
+            @apply grid grid-rows-3 gap-2 items-center my-2;
+            @apply md:grid-cols-[1rem_12rem_16rem_12rem] md:grid-rows-1;
+
+            span {
+              @apply text-sm md:truncate md:overflow-hidden;
+            }
+
+            iconify-icon {
+              @apply text-slate-400 mr-1 text-sm;
+            }
+
+            &::before {
+              @apply content-none md:content-['-'] p-0 md:pr-2;
+            }
+          }
+        }
+      }
+    }
   }
 }
