@@ -6,15 +6,19 @@ export function updateWidths() {
 }
 
 function paintExperience(node: Element) {
-  const spans = node.querySelectorAll("span");
   const indicator = node.querySelector(".display-years") as HTMLDivElement;
   if (indicator) {
-    const years = spans.length;
+    let years = getLineYears(
+      node.parentElement?.parentElement as HTMLLIElement,
+    );
     let max: number | string = getComputedStyle(document.documentElement)
       .getPropertyValue("--max-years")
       .trim();
-    max = max ? parseInt(max) : 0;
-    const percentage = (Math.abs(years) / Math.abs(max)) * 100;
+    max = max ? parseInt(max) : 12;
+    years = years > max ? max : years;
+    let percentage = (Math.abs(years) / Math.abs(max)) * 100;
+    percentage = Math.ceil(percentage);
+    console.log(percentage);
     indicator.style.width = `${percentage}%`;
   }
 }
@@ -37,6 +41,13 @@ export function addNumbers() {
 
 function getLineYears(node: HTMLLIElement) {
   const spans = node.querySelectorAll(".years span.year");
-  const years = spans.length ?? 0;
-  return years;
+  const num = node.querySelector(".years .year-count") as HTMLElement;
+  let value = 0;
+  if (num) {
+    value = parseInt(num.innerHTML);
+  } else {
+    value = spans.length;
+  }
+
+  return value;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,57 +17,64 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Fira+Code"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/gh/andreasjansson/monoid-webfont@master/monoid.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../src/css/resume.css" />
   </head>
 
-  <body class="bg-gray-100">
-    <div id="cv-body" class="max-w-6xl mx-auto p-4">
-      <div id="heading" class="bg-white p-4 rounded-lg shadow mb-4">
+  <body>
+    <div id="cv">
+      <div id="heading" class="cv-section">
         <div>
           <h1>GASTON NDANYUZWE</h1>
-          <p class="text-lg text-gray-700">
-            Senior Full Stack Software Engineer
-          </p>
+          <p class="job-title">Senior Full Stack Software Engineer</p>
           <div class="spoken-languages">
             <div class="spoken-language">
-              <i class="text-sm fi fi-us"></i>Native level
+              <iconify-icon
+                icon="emojione:flag-for-flag-united-states"
+                class="text-sm"
+              ></iconify-icon>
+              <span class="proficiency-txt">Native level</span>
             </div>
             <div class="spoken-language">
-              <i class="text-sm fi fi-fr"></i>Langue maternelle
+              <iconify-icon
+                icon="emojione:flag-for-flag-france"
+                class="text-sm"
+              ></iconify-icon>
+              <span class="proficiency-txt">Langue maternelle</span>
             </div>
             <div class="spoken-language">
-              <i class="text-sm fi fi-nl"></i>Professionele niveau
+              <iconify-icon
+                icon="emojione:flag-for-flag-netherlands"
+                class="text-sm"
+              ></iconify-icon>
+              <span class="proficiency-txt">Professionele niveau</span>
             </div>
           </div>
           <p class="contact-info">
-            <i class="fas fa-at"></i>
+            <iconify-icon
+              icon="tabler:mail-filled"
+              class="text-sm"
+            ></iconify-icon>
             <span>gaston.ndanyuzwe@gmail.com</span>
           </p>
           <p class="contact-info">
-            <i class="fas fa-mobile-retro"></i>
+            <iconify-icon icon="bi:phone-fill" class="text-sm"></iconify-icon>
             <span>+32 484 68 18 25</span>
           </p>
           <p class="contact-info">
-            <i class="fa-brands fa-linkedin"></i>
+            <iconify-icon
+              icon="fa-brands:linkedin"
+              class="text-sm"
+            ></iconify-icon>
             <span>linkedin.com/in/ngasst</span>
           </p>
           <p class="contact-info">
-            <i class="fa-solid fa-house"></i>
+            <iconify-icon
+              icon="iconamoon:home-fill"
+              class="text-sm"
+            ></iconify-icon>
             <span>Brussels Area, Belgium</span>
           </p>
         </div>
@@ -80,7 +87,7 @@
         </div>
       </div>
 
-      <div class="bg-white p-4 rounded-lg shadow">
+      <div class="cv-section">
         <h2>Professional Summary</h2>
         <p id="professional-summary">
           Experienced Software Engineer with over 12 years in full-stack
@@ -91,45 +98,27 @@
         </p>
       </div>
 
-      <div
-        id="tech-skills"
-        class="bg-white p-4 rounded-lg shadow mt-4 page-break"
-      >
+      <div id="tech-skills" class="cv-section page-break">
         <h2>
           Technical Skills<span class="annotation">Years of experience</span>
         </h2>
 
         <!-- Grid Layout for Skill Categories -->
-        <div
-          id="skills-grid"
-          class="grid grid-cols-1 print:grid-cols-4 lg:grid-cols-4 gap-x-2 gap-y-4"
-        >
-          <!-- Languages - Web -->
+        <div id="skills-grid">
           <div>
-            <h3>Languages&nbsp;&mdash;&nbsp;Web</h3>
+            <h3>Lang.&nbsp;&mdash;&nbsp;Web</h3>
             <ul>
               <!-- HTML -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-html5-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:html5"></iconify-icon>
                     <!-- HTML Icon -->
                     <span>HTML</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">12</span>
                   </div>
                 </div>
               </li>
@@ -137,24 +126,14 @@
               <!-- CSS -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-css3-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:css3"></iconify-icon>
                     <!-- CSS Icon -->
                     <span>CSS</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">12</span>
                   </div>
                 </div>
               </li>
@@ -162,25 +141,14 @@
               <!-- JavaScript -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-javascript-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:javascript"></iconify-icon>
                     <!-- JavaScript Icon -->
                     <span>JavaScript</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">12</span>
                   </div>
                 </div>
               </li>
@@ -188,21 +156,14 @@
               <!-- TypeScript -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-typescript-plain colored"></i>
-                    <!-- JavaScript Icon -->
+                  <div class="written">
+                    <iconify-icon icon="devicon:typescript"></iconify-icon>
+                    <!-- TypeScript Icon -->
                     <span>TypeScript</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">8</span>
                   </div>
                 </div>
               </li>
@@ -212,23 +173,20 @@
           <!-- Languages - Scripting -->
           <div>
             <h3 class="font-semibold text-lg mb-2">
-              Languages&nbsp;&mdash;&nbsp;Scripting
+              Lang.&nbsp;&mdash;&nbsp;Scripting
             </h3>
             <ul>
               <!-- PHP -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-php-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:php"></iconify-icon>
                     <!-- PHP Icon -->
                     <span>PHP</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -236,16 +194,14 @@
               <!-- Python -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-python-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:python"></iconify-icon>
                     <!-- Python Icon -->
                     <span>Python</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <!-- Add the corresponding number of 'year' spans based on experience -->
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -253,16 +209,16 @@
               <!-- Lua -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-lua-plain colored"></i>
-                    <!-- Python Icon -->
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-lua"
+                    ></iconify-icon>
+                    <!-- Lua Icon -->
                     <span>Lua</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <!-- Add the corresponding number of 'year' spans based on experience -->
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -270,15 +226,16 @@
               <!-- Ruby -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-ruby-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-ruby"
+                    ></iconify-icon>
                     <!-- Ruby Icon -->
                     <span>Ruby</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <!-- Add the corresponding number of 'year' spans based on experience -->
+                    <span class="year-count">1</span>
                   </div>
                 </div>
               </li>
@@ -288,21 +245,20 @@
           <!-- Languages - System -->
           <div>
             <h3 class="font-semibold text-lg mb-2">
-              Languages&nbsp;&mdash;&nbsp;System
+              Lang.&nbsp;&mdash;&nbsp;System
             </h3>
             <ul>
               <!-- Go -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-go-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:go-wordmark"></iconify-icon>
                     <!-- Go Icon -->
                     <span>Go</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -310,14 +266,14 @@
               <!-- Rust -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-rust-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="skill-icons:rust"></iconify-icon>
                     <!-- Rust Icon -->
                     <span>Rust</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
+                    <span class="year-count">1</span>
                   </div>
                 </div>
               </li>
@@ -325,16 +281,14 @@
               <!-- Java -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-java-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:java"></iconify-icon>
                     <!-- Java Icon -->
                     <span>Java</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">3</span>
                   </div>
                 </div>
               </li>
@@ -342,28 +296,19 @@
           </div>
           <!-- Backend Frameworks -->
           <div>
-            <h3 class="font-semibold text-lg mb-2">Backend Frameworks</h3>
+            <h3 class="font-semibold text-lg mb-2">BE Frameworks</h3>
             <ul>
               <!-- Node.js -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-nodejs-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:nodejs-icon-alt"></iconify-icon>
                     <!-- Node.js Icon -->
                     <span>Node.js</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">10</span>
                   </div>
                 </div>
               </li>
@@ -371,21 +316,14 @@
               <!-- Express -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-express-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:express"></iconify-icon>
                     <!-- Express Icon -->
                     <span>Express</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">8</span>
                   </div>
                 </div>
               </li>
@@ -393,14 +331,14 @@
               <!-- Ruby on Rails -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-rails-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="skill-icons:rails"></iconify-icon>
                     <!-- Ruby on Rails Icon -->
                     <span>Ruby on Rails</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
+                    <span class="year-count">1</span>
                   </div>
                 </div>
               </li>
@@ -408,14 +346,14 @@
               <!-- Laravel -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-laravel-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:laravel"></iconify-icon>
                     <!-- Laravel Icon -->
                     <span>Laravel</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
+                    <span class="year-count">1</span>
                   </div>
                 </div>
               </li>
@@ -423,27 +361,19 @@
           </div>
           <!-- Frontend Frameworks -->
           <div>
-            <h3 class="font-semibold text-lg mb-2">Frontend Frameworks</h3>
+            <h3 class="font-semibold text-lg mb-2">FE Frameworks</h3>
             <ul>
               <!-- React -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-react-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:react"></iconify-icon>
                     <!-- React Icon -->
                     <span>React</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">9</span>
                   </div>
                 </div>
               </li>
@@ -451,20 +381,14 @@
               <!-- Vue.js -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-vuejs-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:vuejs"></iconify-icon>
                     <!-- Vue.js Icon -->
                     <span>Vue.js</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">7</span>
                   </div>
                 </div>
               </li>
@@ -472,21 +396,14 @@
               <!-- Tailwind CSS -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <!-- Tailwind CSS Icon (using a generic CSS icon as a substitute) -->
-
-                    <i class="devicon-tailwindcss-plain colored"></i>
-                    <!-- Substitute Icon -->
+                  <div class="written">
+                    <iconify-icon icon="devicon:tailwindcss"></iconify-icon>
+                    <!-- Tailwind CSS Icon -->
                     <span>Tailwind CSS</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -494,18 +411,14 @@
               <!-- Angular -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-angularjs-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:angular"></iconify-icon>
                     <!-- Angular Icon -->
                     <span>Angular</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -518,15 +431,14 @@
               <!-- Next.js -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-nextjs-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:nextjs"></iconify-icon>
                     <!-- Next.js Icon -->
                     <span>Next.js</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -534,18 +446,14 @@
               <!-- Nuxt.js -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-nuxtjs-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:nuxtjs"></iconify-icon>
                     <!-- Nuxt.js Icon -->
                     <span>Nuxt.js</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -553,15 +461,14 @@
               <!-- SvelteKit (using Svelte icon as a substitute) -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-svelte-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:svelte"></iconify-icon>
                     <!-- Svelte Icon for SvelteKit -->
                     <span>SvelteKit</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -569,14 +476,14 @@
               <!-- Remix -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-react-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:remix-icon"></iconify-icon>
                     <!-- React Icon used for Remix -->
                     <span>Remix</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
+                    <span class="year-count">1</span>
                   </div>
                 </div>
               </li>
@@ -591,19 +498,14 @@
               <!-- D3.js -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-d3js-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:d3js"></iconify-icon>
                     <!-- D3.js Icon -->
                     <span>D3.js</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -611,19 +513,14 @@
               <!-- Redux -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-redux-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:redux"></iconify-icon>
                     <!-- Redux Icon -->
                     <span>Redux</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <!-- Add the corresponding number of 'year' spans based on experience -->
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -631,16 +528,14 @@
               <!-- jQuery -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-jquery-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:jquery"></iconify-icon>
                     <!-- jQuery Icon -->
                     <span>jQuery</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <!-- Add the corresponding number of 'year' spans based on experience -->
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -648,17 +543,14 @@
               <!-- GraphQL -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-graphql-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:graphql"></iconify-icon>
                     <!-- GraphQL Icon -->
                     <span>GraphQL</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -666,7 +558,7 @@
               <!-- REST -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
+                  <div class="written">
                     <iconify-icon
                       icon="vscode-icons:file-type-json"
                     ></iconify-icon>
@@ -675,23 +567,13 @@
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">10</span>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <!-- DevOps -->
           <!-- Databases -->
           <div>
             <h3 class="font-semibold text-lg mb-2">Databases</h3>
@@ -699,21 +581,14 @@
               <!-- MySQL -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-mysql-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:mysql"></iconify-icon>
                     <!-- MySQL Icon -->
                     <span>MySQL</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">8</span>
                   </div>
                 </div>
               </li>
@@ -721,19 +596,16 @@
               <!-- MongoDB -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-mongodb-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-mongo"
+                    ></iconify-icon>
                     <!-- MongoDB Icon -->
                     <span>MongoDB</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -741,19 +613,14 @@
               <!-- PostgreSQL -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-postgresql-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:postgresql"></iconify-icon>
                     <!-- PostgreSQL Icon -->
                     <span>PostgreSQL</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -761,18 +628,14 @@
               <!-- SQLite -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-sqlite-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:sqlite"></iconify-icon>
                     <!-- SQLite Icon -->
                     <span>SQLite</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -780,16 +643,14 @@
               <!-- Redis -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-redis-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:redis"></iconify-icon>
                     <!-- Redis Icon -->
                     <span>Redis</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">3</span>
                   </div>
                 </div>
               </li>
@@ -797,22 +658,20 @@
               <!-- Neo4J -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-neo4j-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:neo4j"></iconify-icon>
                     <!-- Neo4J Icon -->
                     <span>Neo4J</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <!-- Public Cloud -->
           <!-- DevOps -->
           <div>
             <h3 class="font-semibold text-lg mb-2">DevOps</h3>
@@ -820,23 +679,16 @@
               <!-- Docker -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-docker-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-docker"
+                    ></iconify-icon>
                     <!-- Docker Icon -->
                     <span>Docker</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">10</span>
                   </div>
                 </div>
               </li>
@@ -844,17 +696,14 @@
               <!-- Kubernetes -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-kubernetes-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:kubernetes"></iconify-icon>
                     <!-- Kubernetes Icon -->
                     <span>Kubernetes</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -862,18 +711,14 @@
               <!-- Nginx -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-nginx-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:nginx"></iconify-icon>
                     <!-- Nginx Icon -->
                     <span>Nginx</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -881,19 +726,16 @@
               <!-- Caddy -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <!-- Caddy Icon (using a generic server icon as a substitute) -->
+                  <div class="written">
                     <iconify-icon
                       icon="vscode-icons:file-type-caddy"
                     ></iconify-icon>
-                    <!-- Substitute Icon -->
+                    <!-- Caddy Icon -->
                     <span>Caddy</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">3</span>
                   </div>
                 </div>
               </li>
@@ -901,15 +743,14 @@
               <!-- Apache -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-apache-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:apache"></iconify-icon>
                     <!-- Apache Icon -->
                     <span>Apache</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">2</span>
                   </div>
                 </div>
               </li>
@@ -923,18 +764,14 @@
               <!-- AWS -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-amazonwebservices-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:aws"></iconify-icon>
                     <!-- AWS Icon -->
                     <span>AWS</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -942,17 +779,16 @@
               <!-- GCP (Google Cloud Platform) -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-googlecloud-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="devicon-googlecloud-plain colored"
+                    ></iconify-icon>
                     <!-- GCP Icon -->
                     <span>GCP</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -960,16 +796,14 @@
               <!-- Azure -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-azure-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:azure"></iconify-icon>
                     <!-- Azure Icon -->
                     <span>Azure</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">3</span>
                   </div>
                 </div>
               </li>
@@ -977,19 +811,14 @@
               <!-- Digital Ocean -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-digitalocean-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:digitalocean"></iconify-icon>
                     <!-- Digital Ocean Icon -->
                     <span>Digital Ocean</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -997,18 +826,14 @@
               <!-- Cloudflare -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
+                  <div class="written">
                     <iconify-icon icon="devicon:cloudflare"></iconify-icon>
                     <!-- Cloudflare Brand Icon -->
                     <span>Cloudflare</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">5</span>
                   </div>
                 </div>
               </li>
@@ -1024,7 +849,7 @@
               <!-- Vite -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
+                  <div class="written">
                     <iconify-icon
                       icon="vscode-icons:file-type-vite"
                     ></iconify-icon>
@@ -1033,13 +858,7 @@
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">7</span>
                   </div>
                 </div>
               </li>
@@ -1047,19 +866,14 @@
               <!-- Webpack -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
+                  <div class="written">
                     <iconify-icon icon="devicon:webpack"></iconify-icon>
                     <!-- Webpack Icon -->
                     <span>Webpack</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
                 </div>
               </li>
@@ -1067,20 +881,16 @@
               <!-- Jest -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-jest-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-jest"
+                    ></iconify-icon>
                     <!-- Jest Icon -->
                     <span>Jest</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">7</span>
                   </div>
                 </div>
               </li>
@@ -1088,39 +898,33 @@
               <!-- Mocha -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-mocha-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="vscode-icons:file-type-mocha"
+                    ></iconify-icon>
                     <!-- Mocha Icon -->
                     <span>Mocha</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
 
               <!-- Cypress -->
-              <!-- Cypress -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <!-- Cypress Icon (using a generic testing icon as a substitute) -->
+                  <div class="written">
                     <iconify-icon
                       icon="vscode-icons:file-type-light-cypress-spec"
                     ></iconify-icon>
-                    <!-- Substitute Icon -->
+                    <!-- Cypress Icon -->
                     <span>Cypress</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -1128,19 +932,16 @@
               <!-- Vitest -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <!-- Vitest Icon (using a generic testing icon as a substitute) -->
+                  <div class="written">
                     <iconify-icon
                       icon="vscode-icons:file-type-vitest"
                     ></iconify-icon>
-                    <!-- Substitute Icon -->
+                    <!-- Vitest Icon -->
                     <span>Vitest</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">3</span>
                   </div>
                 </div>
               </li>
@@ -1154,44 +955,29 @@
               <!-- Git -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-git-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:git"></iconify-icon>
                     <!-- Git Icon -->
                     <span>Git</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">10</span>
                   </div>
                 </div>
               </li>
+
               <!-- Linux -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-linux-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="flat-color-icons:linux"></iconify-icon>
                     <!-- Linux Icon -->
                     <span>Linux</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">8</span>
                   </div>
                 </div>
               </li>
@@ -1199,29 +985,16 @@
               <!-- Windows -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-windows8-original colored"></i>
+                  <div class="written">
+                    <iconify-icon
+                      icon="logos:microsoft-windows-icon"
+                    ></iconify-icon>
                     <!-- Windows Icon -->
                     <span>Windows</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">16</span>
                   </div>
                 </div>
               </li>
@@ -1229,38 +1002,29 @@
               <!-- macOS -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-apple-original colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="logos:apple"></iconify-icon>
                     <!-- macOS Icon -->
                     <span>macOS</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">6</span>
                   </div>
-                  <!-- Add 'year' spans based on experience -->
                 </div>
               </li>
 
               <!-- VIM/Neovim -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
+                  <div class="written">
                     <iconify-icon icon="devicon:neovim"></iconify-icon>
-                    <!-- Docker Icon -->
+                    <!-- VIM/Neovim Icon -->
                     <span>VIM/Neovim</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">4</span>
                   </div>
                 </div>
               </li>
@@ -1268,23 +1032,15 @@
               <!-- Visual Studio Code -->
               <li>
                 <div class="exp-left">
-                  <div class="written mb-1">
-                    <i class="devicon-vscode-plain colored"></i>
+                  <div class="written">
+                    <iconify-icon icon="devicon:vscode"></iconify-icon>
                     <!-- VS Code Icon -->
                     <span>VS Code</span>
                   </div>
                   <div class="years">
                     <div class="display-years"></div>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
-                    <span class="year"></span>
+                    <span class="year-count">8</span>
                   </div>
-                  <!-- Add 'year' spans based on experience -->
                 </div>
               </li>
             </ul>
@@ -1292,22 +1048,29 @@
         </div>
       </div>
 
-      <div id="work-history" class="bg-white p-4 rounded-lg shadow mt-4">
+      <div id="work-history" class="cv-section">
         <h2>Professional Experience</h2>
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title">Principal Software Engineer</span>
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Skreeb</span
-            >
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              10/2022 – Present</span
-            >
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title">
+                Principal Software Engineer
+              </span>
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                Skreeb
+              </span>
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                10/2022 – Present
+              </span>
+            </h3>
+            <div class="work-history--tags">
+              <p class="wh-tag--multi-role">multi role</p>
+            </div>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location" class="iconify"></iconify-icon>
             <span>Brussels, Belgium</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1325,22 +1088,24 @@
           </ul>
         </div>
         <!-- Sr. Full Stack Web Engineer at Enervalis -->
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title"
-              >Sr. Full Stack Software Engineer</span
-            >
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Enervalis</span
-            >
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              07/2018 – 10/2022</span
-            >
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title"
+                >Sr. Full Stack Software Engineer</span
+              >
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                Enervalis</span
+              >
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                07/2018 – 10/2022</span
+              >
+            </h3>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location"></iconify-icon>
             <span>Hasselt, Belgium</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1364,24 +1129,26 @@
           </ul>
         </div>
         <!-- Web Development Instructor at Wild Code School -->
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title">
-              Web Development Instructor
-              <small>freelance</small>
-              <small>part time</small>
-            </span>
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Wild Code School</span
-            >
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              02/2019 – 02/2020</span
-            >
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title"> Web Dev. Instructor </span>
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                Wild Code School</span
+              >
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                02/2019 – 02/2020</span
+              >
+            </h3>
+            <div class="work-history--tags">
+              <p class="wh-tag--freelance">freelance</p>
+              <p class="wh-tag--part-time">part time</p>
+            </div>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location"></iconify-icon>
             <span>Brussels, Belgium</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1401,24 +1168,26 @@
         </div>
 
         <!-- Solutions Architect Full Stack and DevOps Engineer at Pink Mango -->
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title">
-              Solutions Architect, Full Stack, and DevOps Engineer
-              <small>freelance</small>
-              <small>part time</small>
-            </span>
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Pink Mango</span
-            >
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              05/2018 – 11/2020</span
-            >
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title"> Solutions Architect </span>
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                Pink Mango</span
+              >
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                05/2018 – 11/2020</span
+              >
+            </h3>
+            <div class="work-history--tags">
+              <p class="wh-tag--freelance">freelance</p>
+              <p class="wh-tag--part-time">part time</p>
+            </div>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location"></iconify-icon>
             <span>Lasne, Belgium</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1440,22 +1209,24 @@
         </div>
 
         <!-- Sr. Full Stack Software Engineer at Swanest -->
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title"
-              >Sr. Full Stack Software Engineer</span
-            >
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Swanest
-            </span>
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              09/2017 – 05/2018
-            </span>
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title"
+                >Sr. Full Stack Software Engineer</span
+              >
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                Swanest
+              </span>
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                09/2017 – 05/2018
+              </span>
+            </h3>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location"></iconify-icon>
             <span>Brussels, Belgium</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1481,23 +1252,27 @@
         </div>
 
         <!-- Computer Technician, Network Administrator, Software Developer & Information and Security Manager at Belgian Defense, NATO, EUFOR -->
-        <div class="work-history--item mb-4">
-          <h3>
-            <span class="work-history--title"
-              >Computer Technician, Network Administrator, Software Engineer &
-              Information and Security Manager</span
-            >
-            <span class="work-history--company">
-              <i class="fas fa-industry"></i>
-              Belgian Defense, NATO, EUFOR</span
-            >
-            <span class="work-history--dates">
-              <i class="fas fa-calendar-alt"></i>
-              05/2006 – 08/2017</span
-            >
-          </h3>
+        <div class="work-history--item">
+          <div class="work-history--header">
+            <h3>
+              <span class="work-history--title">
+                Development &amp; Infosec Roles
+              </span>
+              <span class="work-history--company">
+                <iconify-icon icon="mdi:company"></iconify-icon>
+                BEMIL, NATO, EUFOR
+              </span>
+              <span class="work-history--dates">
+                <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+                05/2006 – 08/2017
+              </span>
+            </h3>
+            <div class="work-history--tags">
+              <p class="wh-tag--multi-role">multi role</p>
+            </div>
+          </div>
           <p class="text-gray-600">
-            <i class="fas fa-map-marker-alt"></i>
+            <iconify-icon icon="mdi:location"></iconify-icon>
             <span>Brussels, Sarajevo, Vilvoorde</span>
           </p>
           <ul class="work-history--responsibilities list-none text-gray-600">
@@ -1518,55 +1293,69 @@
         <!-- Other experiences follow a similar pattern -->
       </div>
 
-      <div id="education" class="bg-white p-4 rounded-lg shadow mt-4">
+      <div id="education" class="cv-section">
         <h2>Education</h2>
         <ul class="education-items text-gray-600">
           <li class="education-item">
-            <span>Data Science </span>
-            <span
-              ><i class="fas fa-school"></i>Communications and Information
-              Systems School</span
-            >
-            <span
-              ><i class="fas fa-calendar-alt"></i
-              >01/2014&nbsp;&mdash;&nbsp;12/2015</span
-            >
+            <span>
+              <iconify-icon icon="ic:round-school"></iconify-icon>
+              Data Science
+            </span>
+            <span>
+              <iconify-icon icon="bxs:school"></iconify-icon>
+              Communications and Information Systems School
+            </span>
+            <span>
+              <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+              01/2014&nbsp;&mdash;&nbsp;12/2015
+            </span>
           </li>
           <li class="education-item">
-            <span>Clinical Laboratory Science</span>
-            <span><i class="fas fa-school"></i>Institut paul Lambin</span>
-            <span
-              ><i class="fas fa-calendar-alt"></i
-              >09/2013&nbsp;&mdash;&nbsp;06/2013</span
-            >
+            <span>
+              <iconify-icon icon="ic:round-school"></iconify-icon>
+              Clinical Laboratory Science
+            </span>
+            <span>
+              <iconify-icon icon="bxs:school"></iconify-icon>
+              Institut paul Lambin
+            </span>
+            <span>
+              <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+              09/2013&nbsp;&mdash;&nbsp;06/2013
+            </span>
           </li>
           <li class="education-item">
-            <span>Computer Science</span>
-            <span
-              ><i class="fas fa-school"></i>Ecole Pratique des Hautes Études
-              Commerciales</span
-            >
-            <span
-              ><i class="fas fa-calendar-alt"></i
-              >09/2009&nbsp;&mdash;&nbsp;06/2011</span
-            >
+            <span>
+              <iconify-icon icon="ic:round-school"></iconify-icon>
+              Computer Science
+            </span>
+            <span>
+              <iconify-icon icon="bxs:school"></iconify-icon>
+              Ecole Pratique des Hautes Études Commerciales
+            </span>
+            <span>
+              <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+              09/2009&nbsp;&mdash;&nbsp;06/2011
+            </span>
           </li>
           <li class="education-item">
-            <span>Computer Networking</span>
-            <span
-              ><i class="fas fa-school"></i>Communication and Information
-              Systems School</span
+            <span>
+              <iconify-icon icon="ic:round-school"></iconify-icon>
+              Computer Networking
+            </span>
+            <span>
+              <iconify-icon icon="bxs:school"></iconify-icon>
+              Communication and Information Systems School</span
             >
-            <span
-              ><i class="fas fa-calendar-alt"></i
-              >01/2003&nbsp;&mdash;&nbsp;12/2006</span
-            >
+            <span>
+              <iconify-icon icon="lucide:calendar-clock"></iconify-icon>
+              01/2003&nbsp;&mdash;&nbsp;12/2006
+            </span>
           </li>
-          <!-- ... other education entries -->
         </ul>
       </div>
 
-      <div class="bg-white p-4 rounded-lg shadow mt-4">
+      <div class="cv-section">
         <h2>Fun fact!</h2>
         <p class="mt-2">
           This resume was built using some of tools and techniques described
